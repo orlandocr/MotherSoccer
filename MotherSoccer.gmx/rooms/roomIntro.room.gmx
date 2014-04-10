@@ -10,10 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code>init();
-
-global.player1Attacks = true
-global.player1IsPlaying = false</code>
+  <code>init();</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>

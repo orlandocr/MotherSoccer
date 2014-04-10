@@ -4,6 +4,9 @@ var c = drawPase(IS_MIDFIELDER, IS_STRIKER)
 var d = drawTiroAMarco()
 
 setSprites()
+
+drawShootCoordinates()
+drawGoalkeepCoordinates()
     
 for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
 {

@@ -1,4 +1,4 @@
-if (global.player1IsPlaying)
+if (global.isAttack)
 {
     var a = drawPase(IS_GOALIE, IS_DEFENDER)
     var b = drawPase(IS_DEFENDER, IS_MIDFIELDER)
@@ -7,6 +7,8 @@ if (global.player1IsPlaying)
     
     if (a && b && c && d)
     {
+        global.isAttack = !global.isAttack
+        global.isPlayer1 = !global.isPlayer1
         room_goto(roomSwitch)
     }
 }
@@ -22,6 +24,7 @@ else
 
     if (isDefendSelected())
     {
+        global.modeCheckResults = true
         conceal();
     }
     

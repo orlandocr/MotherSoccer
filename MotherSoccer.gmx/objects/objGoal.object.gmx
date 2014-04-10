@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(roomShoot)
+            <string>if (global.modeCheckResults)
+{
+    return -2;
+}
+
+room_goto(roomShoot)
 </string>
           </argument>
         </arguments>

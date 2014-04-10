@@ -45,6 +45,7 @@
     <scripts name="hud">
       <script>scripts\drawTopLabel.gml</script>
       <script>scripts\drawShootCoordinates.gml</script>
+      <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
       <script>scripts\drawIntro.gml</script>
     </scripts>
@@ -73,10 +74,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roomIntro</room>
-    <room>rooms\roomEmpty</room>
     <room>rooms\roomSwitch</room>
     <room>rooms\roomField</room>
     <room>rooms\roomShoot</room>
+    <room>rooms\roomEmpty</room>
   </rooms>
   <constants number="5">
     <constant name="IS_GOALIE">1</constant>

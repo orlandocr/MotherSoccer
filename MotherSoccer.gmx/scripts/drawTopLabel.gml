@@ -1,35 +1,23 @@
-draw_set_font(font36)
-draw_set_halign(fa_left)
 var msg = "Player ";
 
-if (global.player1IsPlaying)
+if (global.isPlayer1)
 {
     msg += "1";
-
-    if (global.player1Attacks)
-    {
-        msg += ": ATTACK!";
-    }
-    else
-    {
-        msg += ": DEFEND!";    
-    }
-
 }
 else
 {
     msg += "2";
-    
-    if (global.player1Attacks)
-    {
-        msg += ": DEFEND!";
-    }
-    else
-    {
-        msg += ": ATTACK!";    
-    }
-
 }
 
+if (global.isAttack)
+{
+    msg += ": ATTACK!";
+}
+else
+{
+    msg += ": DEFEND!";
+}
 
+draw_set_font(font36)
+draw_set_halign(fa_left)
 draw_text(10, 10, msg)

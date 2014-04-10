@@ -47,7 +47,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.player1IsPlaying = !global.player1IsPlaying
+            <string>/*global.isAttack = !global.isAttack
+global.isPlayer1 = !global.isPlayer1*/
 </string>
           </argument>
         </arguments>
