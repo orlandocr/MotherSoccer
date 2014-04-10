@@ -9,7 +9,7 @@
     <sprite>sprites\sprPlayer</sprite>
     <sprite>sprites\sprPlayerSelected</sprite>
     <sprite>sprites\sprGoalie</sprite>
-    <sprite>sprites\sprPixel</sprite>
+    <sprite>sprites\sprPlayerDead</sprite>
     <sprite>sprites\sprGoal</sprite>
     <sprite>sprites\sprButton</sprite>
     <sprites name="ico">
@@ -25,13 +25,15 @@
     <script>scripts\registerPlayer.gml</script>
     <script>scripts\getPlayerType.gml</script>
     <script>scripts\onPlayerClick.gml</script>
-    <script>scripts\arraysInit.gml</script>
+    <script>scripts\init.gml</script>
     <scripts name="util">
       <script>scripts\print.gml</script>
     </scripts>
     <scripts name="player-selection">
       <script>scripts\isSelected.gml</script>
+      <script>scripts\isDead.gml</script>
       <script>scripts\getSelected.gml</script>
+      <script>scripts\getDead.gml</script>
       <script>scripts\getPlayerInstance.gml</script>
     </scripts>
     <scripts name="pases">
@@ -40,15 +42,17 @@
       <script>scripts\drawPas.gml</script>
       <script>scripts\drawTiroAMarco.gml</script>
     </scripts>
-    <script>scripts\setSprites.gml</script>
     <scripts name="hud">
       <script>scripts\drawTopLabel.gml</script>
       <script>scripts\drawShootCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
       <script>scripts\drawIntro.gml</script>
     </scripts>
+    <script>scripts\setSprites.gml</script>
     <script>scripts\onButtonPress.gml</script>
     <script>scripts\isShootSelected.gml</script>
+    <script>scripts\isDefendSelected.gml</script>
+    <script>scripts\conceal.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font36</font>
@@ -58,14 +62,13 @@
   <objects name="objects">
     <object>objects\objPlayer</object>
     <object>objects\objGoal</object>
-    <object>objects\objPixel</object>
     <object>objects\objButton</object>
     <objects name="controllers">
       <object>objects\ctrlPases</object>
       <object>objects\ctrlTopLabel</object>
       <object>objects\ctrlShootTo</object>
-      <object>objects\ctrlIntro</object>
       <object>objects\ctrlSwitch</object>
+      <object>objects\ctrlIntro</object>
     </objects>
   </objects>
   <rooms name="rooms">

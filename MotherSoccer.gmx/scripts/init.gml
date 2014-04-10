@@ -1,16 +1,14 @@
-/*for (var i=1; i<=11; i++)
-{
-    global.playaz[i] = noone
-};
-*/
-for (var i=1; i<=4; i++)
+for (var i=IS_DEFENDER; i<=IS_STRIKER; i++)
 {
     global.selectedPlayaz[i] = -1
+    global.deadPlayaz[i] = -1
 };
-
 global.selectedPlayaz[IS_GOALIE] = 1
 
 global.rowAttack = -1
 global.columnAttack = -1
+global.rowDefend = -1
+global.columnDefend = -1
+
 
 draw_set_color(c_white)
