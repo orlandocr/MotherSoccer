@@ -47,6 +47,7 @@
       <script>scripts\drawShootCoordinates.gml</script>
       <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
+      <script>scripts\drawMatchResult.gml</script>
       <script>scripts\drawIntro.gml</script>
     </scripts>
     <script>scripts\setSprites.gml</script>
@@ -54,9 +55,12 @@
     <script>scripts\isShootSelected.gml</script>
     <script>scripts\isDefendSelected.gml</script>
     <script>scripts\conceal.gml</script>
+    <script>scripts\calculateResult.gml</script>
+    <script>scripts\initGameVars.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font36</font>
+    <font>fonts\font28</font>
+    <font>fonts\font64</font>
     <font>fonts\font96bold</font>
     <font>fonts\font224bold</font>
   </fonts>
@@ -70,6 +74,7 @@
       <object>objects\ctrlShootTo</object>
       <object>objects\ctrlSwitch</object>
       <object>objects\ctrlIntro</object>
+      <object>objects\ctrlMatchResult</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -77,14 +82,18 @@
     <room>rooms\roomSwitch</room>
     <room>rooms\roomField</room>
     <room>rooms\roomShoot</room>
-    <room>rooms\roomEmpty</room>
+    <room>rooms\roomMatchResult</room>
   </rooms>
-  <constants number="5">
+  <constants number="9">
     <constant name="IS_GOALIE">1</constant>
     <constant name="IS_DEFENDER">2</constant>
     <constant name="IS_MIDFIELDER">3</constant>
     <constant name="IS_STRIKER">4</constant>
     <constant name="IS_WTF_I_DUNNO">0</constant>
+    <constant name="RESULT_NO_STRIKE">1</constant>
+    <constant name="RESULT_GOAL_STOPPED">2</constant>
+    <constant name="RESULT_GOAL">3</constant>
+    <constant name="RESULT_GAME_IN_PROGRESS">0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

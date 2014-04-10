@@ -7,8 +7,6 @@ if (global.isAttack)
     
     if (a && b && c && d)
     {
-        global.isAttack = !global.isAttack
-        global.isPlayer1 = !global.isPlayer1
         room_goto(roomSwitch)
     }
 }
