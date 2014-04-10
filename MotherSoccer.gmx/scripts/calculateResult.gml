@@ -44,7 +44,22 @@ if (isNoStrike)
 }
 else if (isGoalKept)
 {
-    global.result = RESULT_GOAL_STOPPED
+    var row = (global.rowAttack == global.rowDefend);
+    var col = (global.columnAttack == global.columnDefend);
+
+    if (row && col)
+    {
+        global.result = RESULT_GOAL_STOPPED_PERFECT
+    }
+    else if (row)
+    {
+        global.result = RESULT_GOAL_STOPPED_ROW
+    }
+    else if (col)
+    {
+        global.result = RESULT_GOAL_STOPPED_COLUMN
+    }
+
 }
 else if (isGoal)
 {

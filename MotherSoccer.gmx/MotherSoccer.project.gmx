@@ -84,15 +84,17 @@
     <room>rooms\roomShoot</room>
     <room>rooms\roomMatchResult</room>
   </rooms>
-  <constants number="9">
+  <constants number="11">
     <constant name="IS_GOALIE">1</constant>
     <constant name="IS_DEFENDER">2</constant>
     <constant name="IS_MIDFIELDER">3</constant>
     <constant name="IS_STRIKER">4</constant>
     <constant name="IS_WTF_I_DUNNO">0</constant>
     <constant name="RESULT_NO_STRIKE">1</constant>
-    <constant name="RESULT_GOAL_STOPPED">2</constant>
-    <constant name="RESULT_GOAL">3</constant>
+    <constant name="RESULT_GOAL_STOPPED_ROW">2</constant>
+    <constant name="RESULT_GOAL_STOPPED_COLUMN">3</constant>
+    <constant name="RESULT_GOAL_STOPPED_PERFECT">4</constant>
+    <constant name="RESULT_GOAL">5</constant>
     <constant name="RESULT_GAME_IN_PROGRESS">0</constant>
   </constants>
   <help>

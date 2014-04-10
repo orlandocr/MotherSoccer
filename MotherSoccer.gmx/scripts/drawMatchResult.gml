@@ -1,27 +1,23 @@
 draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
 var xCentered = room_width/2
 
 var msg = string(global.goals1) + " - " + string(global.goals2)
 
 draw_set_font(font224bold)
-draw_text(xCentered,room_height/2,msg);
+draw_text(xCentered,200,msg);
 
 
 
 draw_set_font(font64)
 
 
+switch (global.result)
+{
+    case RESULT_NO_STRIKE: draw_text(xCentered, 600, "PASE INTERCEPTADO"); break;
+    case RESULT_GOAL_STOPPED_ROW: draw_text(xCentered, 600, "PORTERO tapa fila"); break;
+    case RESULT_GOAL_STOPPED_COLUMN: draw_text(xCentered, 600, "PORTERO tapa columna"); break;
+    case RESULT_GOAL_STOPPED_PERFECT: draw_text(xCentered, 600, "PORTEROOOOOOO"); break;
+    case RESULT_GOAL: draw_text(xCentered, 600, "GOOOOOOL PANADOOOL"); break;
+    default: break;
+}
 
-if (global.result == RESULT_NO_STRIKE)
-{
-    draw_text(xCentered, 600, "PASE INTERCEPTADO")
-}
-else if (global.result == RESULT_GOAL_STOPPED)
-{
-    draw_text(xCentered, 600, "PORTERO tapa fil y col")
-}
-else if (global.result == RESULT_GOAL)
-{
-    draw_text(xCentered, 600, "GOOOL PANADOOOL")
-}
