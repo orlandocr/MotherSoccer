@@ -7,7 +7,11 @@ setSprites()
 
 drawShootCoordinates()
 drawGoalkeepCoordinates()
-    
+
+var isNoStrike = false;
+var isGoalKept = false;
+var isGoal = false;
+
 for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
 {
     var passPlaya = global.selectedPlayaz[i];
@@ -24,31 +28,40 @@ for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
             continue;
         }
         
-        /*var a = passPlaya.numba;
-        var b = scheissePlaya.numba;*/
         if (passPlaya == scheissePlaya)
         {
-            /*show_message("no strike")
-            break;
-            room_goto(roomIntro)*/
+            isNoStrike = true;
         }
         else
         {
-            if (global.rowAttack == global.rowDefend) && (global.columnAttack == global.columnDefend)
+            if (global.rowAttack == global.rowDefend) || (global.columnAttack == global.columnDefend)
             {
-                /*show_message("GOALKEEPERED")
-                break;
-                room_goto(roomIntro)*/
+                isGoalKept = true
             }
             else
             {
-                /*show_message("GOOOOAAAAAAAAALLLL!!!!!")
-                break;
-                room_goto(roomIntro)*/
+                isGoal = true
             }
         }
         
     };
 
 };
+
+if (isNoStrike)
+{
+    show_message("someone got killed, so no strike...")
+}
+else if (isGoalKept)
+{
+    show_message("PORTERO!!! (EL MAE TAPA TODA LA FILA Y TODA LA COLUMNA)")
+}
+else if (isGoal)
+{
+    show_message("GOOOOAAAAAAAAALLLL!!!!!")
+}
+else
+{
+    show_message("WTF did just happened?!")
+}
 
