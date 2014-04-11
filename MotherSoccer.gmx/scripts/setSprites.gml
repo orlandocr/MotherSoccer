@@ -1,6 +1,13 @@
 //GOALIE
-var j = instance_find(objPlaya, 1);
-j.sprite_index = sprGoalie
+var j = instance_find(objPlaya, 1-1);
+if (isSelected(IS_GOALIE))
+{
+    j.sprite_index = sprGoalieSelected
+}
+else
+{
+    j.sprite_index = sprGoalie
+}
 
 //ALL STANDARD PLAYERS
 for (i=2; i<=11; i++)

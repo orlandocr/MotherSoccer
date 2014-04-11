@@ -29,7 +29,7 @@
     <option_android_google_play_id></option_android_google_play_id>
     <option_android_google_tracking_id></option_android_google_tracking_id>
     <option_android_iap_suppress_toast>0</option_android_iap_suppress_toast>
-    <option_android_icade_support>-1</option_android_icade_support>
+    <option_android_icade_support>0</option_android_icade_support>
     <option_android_icon_170>Configs\Default\android\icons\icon170.png</option_android_icon_170>
     <option_android_icon_36>Configs\Default\android\icons\icon36.png</option_android_icon_36>
     <option_android_icon_48>Configs\Default\android\icons\icon48.png</option_android_icon_48>

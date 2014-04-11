@@ -8,8 +8,9 @@
   <sprites name="sprites">
     <sprite>sprites\sprPlaya</sprite>
     <sprite>sprites\sprPlayaSelected</sprite>
-    <sprite>sprites\sprPlayaDead</sprite>
     <sprite>sprites\sprGoalie</sprite>
+    <sprite>sprites\sprGoalieSelected</sprite>
+    <sprite>sprites\sprPlayaDead</sprite>
     <sprite>sprites\sprGoal</sprite>
     <sprite>sprites\sprButton</sprite>
     <sprites name="ico">
