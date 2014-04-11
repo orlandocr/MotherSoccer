@@ -1,26 +1,21 @@
 ///Returns the IS_type constant, according to the player's number
 
-switch (argument0)
-{
-    case 1:
-        return IS_GOALIE;
-    
-    case 2:
-    case 3:
-        return IS_DEFENDER;
+var firstDefender = 2;
+var lastDefender = global.formation[IS_DEFENDER]+1;
 
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-        return IS_MIDFIELDER;
+var firstMiddle = lastDefender+1;
+var lastMiddle = firstMiddle+global.formation[IS_MIDFIELDER]-1;
 
-    case 9:
-    case 10:
-    case 11:
-        return IS_STRIKER;
+var firstStriker = lastMiddle+1;
+var lastStriker = 11;
 
-    default:
-        return IS_WTF_I_DUNNO;
-}
+if (argument0 == 1)
+    return IS_GOALIE;
+else if (argument0 >= firstDefender) && (argument0 <= lastDefender)
+    return IS_DEFENDER;
+else if (argument0 >= firstMiddle) && (argument0 <= lastMiddle)
+    return IS_MIDFIELDER;
+else if (argument0 >= firstStriker) && (argument0 <= lastStriker)
+    return IS_STRIKER;
+else
+    return IS_WTF_I_DUNNO;

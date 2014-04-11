@@ -57,6 +57,7 @@
     <script>scripts\conceal.gml</script>
     <script>scripts\calculateResult.gml</script>
     <script>scripts\initGameVars.gml</script>
+    <script>scripts\testCreation.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font28</font>

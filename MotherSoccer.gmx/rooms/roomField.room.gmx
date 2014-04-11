@@ -15,7 +15,9 @@
     initGameVars()
     
     global.result = RESULT_GAME_IN_PROGRESS
-}</code>
+}
+
+testCreation()</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -55,20 +57,10 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objPlayer" x="96" y="384" name="playa1" locked="0" code="sprite_index = sprGoalie&#xA;registerPlayer(1, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="256" y="256" name="playa2" locked="0" code="registerPlayer(2, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="256" y="512" name="playa3" locked="0" code="registerPlayer(3, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="480" y="64" name="playa4" locked="0" code="registerPlayer(4, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="480" y="224" name="playa5" locked="0" code="registerPlayer(5, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="480" y="384" name="playa6" locked="0" code="registerPlayer(6, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="480" y="544" name="playa7" locked="0" code="registerPlayer(7, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="480" y="704" name="playa8" locked="0" code="registerPlayer(8, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="736" y="192" name="playa9" locked="0" code="registerPlayer(9, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="736" y="384" name="playa10" locked="0" code="registerPlayer(10, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="736" y="576" name="playa11" locked="0" code="registerPlayer(11, self)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayer" x="96" y="384" name="playa1" locked="0" code="sprite_index = sprGoalie&#xA;registerPlayer(self, 1, IS_GOALIE)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ctrlShootTo" x="832" y="608" name="goalLabel" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="objGoal" x="928" y="384" name="goal" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ctrlPases" x="-64" y="-64" name="passes" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ctrlShootTo" x="832" y="608" name="goalLabel" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
