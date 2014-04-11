@@ -1,1 +1,1 @@
-return (global.deadPlayaz[argument0] != -1)
+return (global.deadPlayaz[argument0] != INVALID)

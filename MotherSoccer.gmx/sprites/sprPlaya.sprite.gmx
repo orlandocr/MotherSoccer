@@ -19,6 +19,6 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\sprPlayerSelected_0.png</frame>
+    <frame index="0">images\sprPlaya_0.png</frame>
   </frames>
 </sprite>

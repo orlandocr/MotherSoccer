@@ -1,15 +1,18 @@
 //onPlayerClick(self)
 
-if (argument0.numba == 1)
+//Do nothing when clicking on the goalkeeper
+if (argument0.numba == IS_GOALIE)
 {
-    return -1;
+    return INVALID;
 }
 
+//Do nothing when the players are comparing results
 if (global.modeCheckResults)
 {
-    return -2;
+    return INVALID;
 }
 
+//A playa has been clicked
 if (global.isAttack)
 {
     global.selectedPlayaz[argument0.type] = argument0.numba;

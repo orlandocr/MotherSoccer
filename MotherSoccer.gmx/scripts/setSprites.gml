@@ -1,12 +1,12 @@
 //GOALIE
-var j = instance_find(objPlayer, 1);
+var j = instance_find(objPlaya, 1);
 j.sprite_index = sprGoalie
 
 //ALL STANDARD PLAYERS
 for (i=2; i<=11; i++)
 {
-    var j = instance_find(objPlayer, i-1);
-    j.sprite_index = sprPlayer;
+    var j = instance_find(objPlaya, i-1);
+    j.sprite_index = sprPlaya;
 };
 
 if (global.isAttack)
@@ -19,7 +19,7 @@ if (global.isAttack)
             var j = getSelected(i);
             if (j != noone)
             {
-                j.sprite_index = sprPlayerSelected;
+                j.sprite_index = sprPlayaSelected;
             }
         }
     };
@@ -34,7 +34,7 @@ else
             var j = getDead(i);
             if (j != noone)
             {
-                j.sprite_index = sprPlayerDead;
+                j.sprite_index = sprPlayaDead;
             }
         }
     };

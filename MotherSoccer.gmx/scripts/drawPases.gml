@@ -14,7 +14,7 @@ else
 {
     for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
     {
-        if (global.deadPlayaz[i] == -1)
+        if (global.deadPlayaz[i] == INVALID)
         {
             return false;
         }

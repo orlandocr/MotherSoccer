@@ -1,22 +1,4 @@
-var msg = "Player ";
-
-if (global.isPlayer1)
-{
-    msg += "1";
-}
-else
-{
-    msg += "2";
-}
-
-if (global.isAttack)
-{
-    msg += ": ATTACK!";
-}
-else
-{
-    msg += ": DEFEND!";
-}
+var msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage() + "!";
 
 draw_set_font(font28)
 draw_set_halign(fa_left)

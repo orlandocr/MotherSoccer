@@ -1,1 +1,1 @@
-return (global.rowDefend != -1) && (global.columnDefend != -1);
+return (global.rowDefend != INVALID) && (global.columnDefend != INVALID);

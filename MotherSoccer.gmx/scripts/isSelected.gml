@@ -1,1 +1,1 @@
-return (global.selectedPlayaz[argument0] != -1)
+return (global.selectedPlayaz[argument0] != INVALID)
