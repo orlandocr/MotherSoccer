@@ -19,6 +19,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bgSoccerField</background>
+    <background>background\bgIntro</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -52,7 +53,6 @@
       <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
       <script>scripts\drawMatchResult.gml</script>
-      <script>scripts\drawIntro.gml</script>
       <script>scripts\getCurrentPlayer.gml</script>
       <script>scripts\getAttackOrDefendMessage.gml</script>
     </scripts>
@@ -71,7 +71,7 @@
     <font>fonts\font28</font>
     <font>fonts\font64</font>
     <font>fonts\font96bold</font>
-    <font>fonts\font224bold</font>
+    <font>fonts\font164bold</font>
   </fonts>
   <objects name="objects">
     <object>objects\objPlaya</object>
