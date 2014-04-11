@@ -24,7 +24,7 @@ for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
         }
         else
         {
-            if (global.rowAttack == global.rowDefend) || (global.columnAttack == global.columnDefend)
+            if (global.rowAttack == global.rowDefend) && (global.columnAttack == global.columnDefend)
             {
                 isGoalKept = true
             }
@@ -44,27 +44,11 @@ if (isNoStrike)
 }
 else if (isGoalKept)
 {
-    var row = (global.rowAttack == global.rowDefend);
-    var col = (global.columnAttack == global.columnDefend);
-
-    if (row && col)
-    {
-        global.result = RESULT_GOAL_STOPPED_PERFECT
-    }
-    else if (row)
-    {
-        global.result = RESULT_GOAL_STOPPED_ROW
-    }
-    else if (col)
-    {
-        global.result = RESULT_GOAL_STOPPED_COLUMN
-    }
-
+    global.result = RESULT_GOAL_STOPPED
 }
 else if (isGoal)
 {
     global.result = RESULT_GOAL
-    
 
     if (global.isAttack)
     {
