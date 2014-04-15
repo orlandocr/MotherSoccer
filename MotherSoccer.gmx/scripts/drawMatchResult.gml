@@ -1,15 +1,13 @@
-draw_set_halign(fa_center);
-var xCentered = room_width/2;
-
 draw_set_font(font164bold);
+draw_set_halign(fa_center);
 var msg = string(global.goals1) + " - " + string(global.goals2);
+var xCentered = (room_width/2) - (string_width(msg)/2);
 draw_text(xCentered,200,msg);
 
 draw_set_font(font64)
-switch (global.result)
-{
-    case RESULT_NO_STRIKE: draw_text(xCentered, 550, "barriiidaaa"); break;
-    case RESULT_GOAL_STOPPED: draw_text(xCentered, 550, "POOORTEEEEEEROOO"); break;
-    case RESULT_GOAL: draw_text(xCentered, 550, "GOOOLLL PANADOOOLLL"); break;
-    default: break;
-}
+draw_set_halign(fa_center);
+draw_text(INVALID,INVALID,"");
+var msgAtBottom = getMatchResultMessage();
+var x2 = (room_width/2)// - (string_width(msgAtBottom)/2);
+//print(string(x2) + "" + string(msgAtBottom) + " " + string(string_width(msgAtBottom)))
+draw_text(x2, 550, msgAtBottom)

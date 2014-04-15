@@ -10,15 +10,18 @@ if (global.modeCheckResults)
 if (global.isAttack)
 {
     global.selectedPlayaz[argument0.type] = argument0.numba;
+    playSound(sfxSelectShoot)
 }
 else
 {
     if (argument0.numba == 1)
     {
-        show_message("hijueputa carepicha no puede matar al portero malparío me cago en su maire voy a ir a pichasealo a su casa con Lonnis, el chunche y Roy Anthony Myers")
+        playSound(sfxSelectPorteroDelete)
+        show_message("mae no weon, como va a matar al portero? no ve que solo tenemos uno?")
     }
     else
     {
         global.deadPlayaz[argument0.type] = argument0.numba;
+        playSound(sfxSelectDefend)
     }
 }

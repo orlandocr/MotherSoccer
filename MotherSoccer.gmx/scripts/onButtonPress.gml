@@ -2,6 +2,8 @@
 
 //print("("+string(argument1)+","+string(argument2)+")")
 
+playSound(sfxShoot)
+
 if (global.isAttack)
 {
     global.rowAttack = argument0.row

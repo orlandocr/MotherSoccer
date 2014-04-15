@@ -4,7 +4,25 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="music">
+      <sound>sound\sndIntro</sound>
+      <sound>sound\sndCrowd</sound>
+    </sounds>
+    <sounds name="sfx">
+      <sounds name="select">
+        <sound>sound\sfxSelectShoot</sound>
+        <sound>sound\sfxSelectDefend</sound>
+        <sound>sound\sfxSelectPorteroDelete</sound>
+      </sounds>
+      <sounds name="result">
+        <sound>sound\sfxGol</sound>
+        <sound>sound\sfxInterceptado</sound>
+        <sound>sound\sfxPortero</sound>
+      </sounds>
+      <sound>sound\sfxShoot</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprPlaya</sprite>
     <sprite>sprites\sprPlayaSelected</sprite>
@@ -17,6 +35,7 @@
       <sprite>sprites\icoLines</sprite>
       <sprite>sprites\icoLabel</sprite>
     </sprites>
+    <sprite>sprites\sprPixel</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgSoccerField</background>
@@ -32,21 +51,29 @@
       <script>scripts\getPlayaTypeX.gml</script>
       <script>scripts\getPlayaY.gml</script>
     </scripts>
-    <scripts name="util">
-      <script>scripts\print.gml</script>
-    </scripts>
-    <scripts name="player-selection">
-      <script>scripts\isSelected.gml</script>
-      <script>scripts\isDead.gml</script>
-      <script>scripts\getSelected.gml</script>
-      <script>scripts\getDead.gml</script>
-      <script>scripts\getPlayerInstance.gml</script>
-    </scripts>
     <scripts name="pases">
       <script>scripts\drawPases.gml</script>
       <script>scripts\drawPase.gml</script>
       <script>scripts\drawPas.gml</script>
       <script>scripts\drawTiroAMarco.gml</script>
+      <scripts name="player-selection">
+        <script>scripts\isSelected.gml</script>
+        <script>scripts\isDead.gml</script>
+        <script>scripts\getSelected.gml</script>
+        <script>scripts\getDead.gml</script>
+        <script>scripts\getPlayerInstance.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="gameplay">
+      <script>scripts\setSprites.gml</script>
+      <script>scripts\onButtonPress.gml</script>
+      <script>scripts\conceal.gml</script>
+      <script>scripts\calculateResult.gml</script>
+    </scripts>
+    <scripts name="util">
+      <script>scripts\print.gml</script>
+      <script>scripts\playSound.gml</script>
+      <script>scripts\playResultSfx.gml</script>
     </scripts>
     <scripts name="hud">
       <script>scripts\drawTopLabel.gml</script>
@@ -54,15 +81,12 @@
       <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
       <script>scripts\drawMatchResult.gml</script>
+      <script>scripts\getMatchResultMessage.gml</script>
       <script>scripts\getCurrentPlayer.gml</script>
       <script>scripts\getAttackOrDefendMessage.gml</script>
+      <script>scripts\isShootSelected.gml</script>
+      <script>scripts\isDefendSelected.gml</script>
     </scripts>
-    <script>scripts\setSprites.gml</script>
-    <script>scripts\onButtonPress.gml</script>
-    <script>scripts\isShootSelected.gml</script>
-    <script>scripts\isDefendSelected.gml</script>
-    <script>scripts\conceal.gml</script>
-    <script>scripts\calculateResult.gml</script>
     <scripts name="init">
       <script>scripts\globalInit.gml</script>
       <script>scripts\initGameVars.gml</script>
@@ -86,6 +110,7 @@
       <object>objects\ctrlIntro</object>
       <object>objects\ctrlMatchResult</object>
     </objects>
+    <object>objects\visualObjMarco</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomIntro</room>
