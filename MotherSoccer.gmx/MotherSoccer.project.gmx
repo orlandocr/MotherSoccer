@@ -24,18 +24,30 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprPlaya</sprite>
-    <sprite>sprites\sprPlayaSelected</sprite>
-    <sprite>sprites\sprGoalie</sprite>
-    <sprite>sprites\sprGoalieSelected</sprite>
     <sprite>sprites\sprPlayaDead</sprite>
     <sprite>sprites\sprGoal</sprite>
-    <sprite>sprites\sprButton</sprite>
     <sprites name="ico">
       <sprite>sprites\icoLines</sprite>
       <sprite>sprites\icoLabel</sprite>
     </sprites>
+    <sprites name="goal-button">
+      <sprite>sprites\sprGoalButton</sprite>
+      <sprite>sprites\sprGoalButtonShoot</sprite>
+      <sprite>sprites\sprGoalButtonDefend</sprite>
+    </sprites>
     <sprite>sprites\sprPixel</sprite>
+    <sprites name="round1">
+      <sprite>sprites\sprPlaya</sprite>
+      <sprite>sprites\sprPlayaSelected</sprite>
+      <sprite>sprites\sprGoalie</sprite>
+      <sprite>sprites\sprGoalieSelected</sprite>
+    </sprites>
+    <sprites name="round2">
+      <sprite>sprites\sprPassiveGoalie</sprite>
+      <sprite>sprites\sprPassivePlaya</sprite>
+      <sprite>sprites\sprGoalieDefend</sprite>
+      <sprite>sprites\sprPlayaSelectedLeft</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgSoccerField</background>
@@ -77,13 +89,13 @@
     </scripts>
     <scripts name="hud">
       <script>scripts\drawTopLabel.gml</script>
+      <script>scripts\getAttackOrDefendMessage.gml</script>
       <script>scripts\drawShootCoordinates.gml</script>
       <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
       <script>scripts\drawMatchResult.gml</script>
       <script>scripts\getMatchResultMessage.gml</script>
       <script>scripts\getCurrentPlayer.gml</script>
-      <script>scripts\getAttackOrDefendMessage.gml</script>
       <script>scripts\isShootSelected.gml</script>
       <script>scripts\isDefendSelected.gml</script>
     </scripts>
@@ -101,7 +113,7 @@
   <objects name="objects">
     <object>objects\objPlaya</object>
     <object>objects\objGoal</object>
-    <object>objects\objButton</object>
+    <object>objects\objGoalButton</object>
     <objects name="controllers">
       <object>objects\ctrlPases</object>
       <object>objects\ctrlTopLabel</object>

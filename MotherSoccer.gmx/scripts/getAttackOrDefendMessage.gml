@@ -1,8 +1,10 @@
 if (global.isAttack)
 {
-    return "ATTACK";
+    //return "ATTACK";
+    return "PASS the ball";
 }
 else
 {
-    return "DEFEND";
+//    return "DEFEND";
+    return "KILL the others";
 }

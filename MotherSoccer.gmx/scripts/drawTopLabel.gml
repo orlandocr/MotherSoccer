@@ -1,4 +1,13 @@
-var msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage() + "!";
+var msg = ""
+if (global.modeCheckResults)
+{
+    msg = "Compare results";
+}
+else
+{
+    //msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage() + "!";
+    msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage();
+}
 
 draw_set_font(font28)
 draw_set_halign(fa_left)

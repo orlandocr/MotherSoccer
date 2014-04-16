@@ -26,8 +26,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-122</xoffset>
-    <yoffset>-55</yoffset>
+    <xoffset>-78</xoffset>
+    <yoffset>-52</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgSoccerField" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,16 +51,16 @@
   </views>
   <instances>
     <instance objName="ctrlTopLabel" x="24" y="-72" name="inst_32AE9BF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="visualObjMarco" x="104" y="232" name="inst_D95FAE80" locked="0" code="" scaleX="12.75" scaleY="6.5" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="120" y="248" name="b1" locked="0" code="row = 1&#xA;column = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="384" y="248" name="b2" locked="0" code="row = 1&#xA;column = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="648" y="248" name="b3" locked="0" code="row = 1&#xA;column = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="120" y="384" name="b4" locked="0" code="row = 2&#xA;column = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="384" y="384" name="b5" locked="0" code="row = 2&#xA;column = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="648" y="384" name="b6" locked="0" code="row = 2&#xA;column = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="120" y="520" name="b7" locked="0" code="row = 3&#xA;column = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="384" y="520" name="b8" locked="0" code="row = 3&#xA;column = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objButton" x="648" y="520" name="b9" locked="0" code="row = 3&#xA;column = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="visualObjMarco" x="104" y="272" name="inst_D95FAE80" locked="0" code="" scaleX="12.75" scaleY="6.5" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="120" y="288" name="b1" locked="0" code="row = 1&#xA;column = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="384" y="288" name="b2" locked="0" code="row = 1&#xA;column = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="648" y="288" name="b3" locked="0" code="row = 1&#xA;column = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="120" y="424" name="b4" locked="0" code="row = 2&#xA;column = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="384" y="424" name="b5" locked="0" code="row = 2&#xA;column = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="648" y="424" name="b6" locked="0" code="row = 2&#xA;column = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="120" y="560" name="b7" locked="0" code="row = 3&#xA;column = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="384" y="560" name="b8" locked="0" code="row = 3&#xA;column = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoalButton" x="648" y="560" name="b9" locked="0" code="row = 3&#xA;column = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
