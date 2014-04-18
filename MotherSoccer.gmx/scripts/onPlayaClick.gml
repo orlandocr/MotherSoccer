@@ -14,14 +14,23 @@ if (global.isAttack)
 }
 else
 {
-    if (argument0.numba == 1)
+    if (argument0.type == IS_GOALIE)
+    {
+        doPortero()
+    }
+    else if (argument0.numba == 12)
     {
         playSound(sfxSelectPorteroDelete)
-        show_message("mae no weon, como va a matar al portero? no ve que solo tenemos uno?")
+        show_message("mae no weon, uno no puede matar al portero!")
+        //playSound(sfxSelectPorteroDelete)
+        //show_message("mae no weon, el portero no sabe barrerse...")
     }
     else
     {
         global.deadPlayaz[argument0.type] = argument0.numba;
+        var killer = findCloserInstance(argument0)
+        global.killedBy[argument0.type] = killer.numba
+        //debug("onPlayoClick " + string(killer.numba) + " " + string(argument0.numba))
         playSound(sfxSelectDefend)
     }
 }

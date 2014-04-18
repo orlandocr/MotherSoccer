@@ -1,7 +1,14 @@
 if (isSelected(argument0))
 {
     var n = global.selectedPlayaz[argument0];
-    return getPlayerInstance(n);
+    if (global.modeCheckResults)
+    {
+        return getPassivePlayerInstance(n);
+    }
+    else
+    {
+        return getPlayerInstance(n);
+    }
 }
 else
 {

@@ -2,7 +2,7 @@
 <sprite>
   <xorig>32</xorig>
   <yorigin>32</yorigin>
-  <colkind>0</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
@@ -19,6 +19,6 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\sprPassivePlaya_0.png</frame>
+    <frame index="0">images\sprPassivePlayaDead_0.png</frame>
   </frames>
 </sprite>

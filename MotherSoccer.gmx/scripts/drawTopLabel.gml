@@ -5,8 +5,14 @@ if (global.modeCheckResults)
 }
 else
 {
-    //msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage() + "!";
-    msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage();
+    if (room==roomShoot)
+    {
+        msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendVerb();
+    }
+    else
+    {
+        msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage();
+    }
 }
 
 draw_set_font(font28)

@@ -1,6 +1,6 @@
 ///getPlayaY(howManyOfPlayaType,currentOfPlayaType);
 
-//yy[1,1] = 384
+yy[1,1] = 384
 
 yy[2,1] = 256
 yy[2,2] = 512

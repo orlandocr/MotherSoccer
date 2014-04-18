@@ -1,7 +1,8 @@
-for (var i=IS_GOALIE; i<=IS_STRIKER; i++)
+for (var playaType=IS_GOALIE; playaType<=IS_STRIKER; playaType++)
 {
-    global.selectedPlayaz[i] = INVALID
-    global.deadPlayaz[i] = INVALID
+    global.selectedPlayaz[playaType] = INVALID
+    global.deadPlayaz[playaType] = INVALID
+    global.killedBy[playaType] = INVALID
 };
 
 global.rowAttack = INVALID

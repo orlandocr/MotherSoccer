@@ -16,15 +16,14 @@
         <sound>sound\sfxSelectPorteroDelete</sound>
       </sounds>
       <sounds name="result">
-        <sound>sound\sfxGol</sound>
-        <sound>sound\sfxInterceptado</sound>
-        <sound>sound\sfxPortero</sound>
+        <sound>sound\sfxResultGol</sound>
+        <sound>sound\sfxResultInterceptado</sound>
+        <sound>sound\sfxResultPortero</sound>
       </sounds>
       <sound>sound\sfxShoot</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprPlayaDead</sprite>
     <sprite>sprites\sprGoal</sprite>
     <sprites name="ico">
       <sprite>sprites\icoLines</sprite>
@@ -45,8 +44,10 @@
     <sprites name="round2">
       <sprite>sprites\sprPassiveGoalie</sprite>
       <sprite>sprites\sprPassivePlaya</sprite>
-      <sprite>sprites\sprGoalieDefend</sprite>
+      <sprite>sprites\sprPassivePlayaDead</sprite>
+      <sprite>sprites\sprGoalieLeft</sprite>
       <sprite>sprites\sprPlayaSelectedLeft</sprite>
+      <sprite>sprites\sprPassiveGoalieSelected</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -59,8 +60,10 @@
       <script>scripts\onPlayaClick.gml</script>
       <script>scripts\createPlayaz.gml</script>
       <script>scripts\createPlaya.gml</script>
+      <script>scripts\createPassivePlaya.gml</script>
       <script>scripts\selectFormation.gml</script>
-      <script>scripts\getPlayaTypeX.gml</script>
+      <script>scripts\getPlayaTypeXL2R.gml</script>
+      <script>scripts\getPlayaTypeXR2L.gml</script>
       <script>scripts\getPlayaY.gml</script>
     </scripts>
     <scripts name="pases">
@@ -74,22 +77,31 @@
         <script>scripts\getSelected.gml</script>
         <script>scripts\getDead.gml</script>
         <script>scripts\getPlayerInstance.gml</script>
+        <script>scripts\getPassivePlayerInstance.gml</script>
       </scripts>
     </scripts>
     <scripts name="gameplay">
       <script>scripts\setSprites.gml</script>
+      <script>scripts\findCloserInstance.gml</script>
+      <script>scripts\killNearest.gml</script>
       <script>scripts\onButtonPress.gml</script>
       <script>scripts\conceal.gml</script>
       <script>scripts\calculateResult.gml</script>
+      <script>scripts\doPortero.gml</script>
     </scripts>
     <scripts name="util">
       <script>scripts\print.gml</script>
-      <script>scripts\playSound.gml</script>
-      <script>scripts\playResultSfx.gml</script>
+      <script>scripts\s.gml</script>
+      <script>scripts\debug.gml</script>
+      <scripts name="sound">
+        <script>scripts\playSound.gml</script>
+        <script>scripts\playResultSfx.gml</script>
+      </scripts>
     </scripts>
     <scripts name="hud">
       <script>scripts\drawTopLabel.gml</script>
       <script>scripts\getAttackOrDefendMessage.gml</script>
+      <script>scripts\getAttackOrDefendVerb.gml</script>
       <script>scripts\drawShootCoordinates.gml</script>
       <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
@@ -123,11 +135,13 @@
       <object>objects\ctrlMatchResult</object>
     </objects>
     <object>objects\visualObjMarco</object>
+    <object>objects\objPassivePlaya</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomIntro</room>
     <room>rooms\roomSwitch</room>
     <room>rooms\roomField</room>
+    <room>rooms\roomPopulatedField</room>
     <room>rooms\roomShoot</room>
     <room>rooms\roomMatchResult</room>
   </rooms>

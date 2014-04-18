@@ -17,24 +17,24 @@
     global.result = RESULT_GAME_IN_PROGRESS
 }
 
-createPlayaz()</code>
+//createPlayaz()</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1405</w>
-    <h>606</h>
+    <w>1457</w>
+    <h>827</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
-    <showForegrounds>-1</showForegrounds>
-    <showViews>0</showViews>
+    <showForegrounds>0</showForegrounds>
+    <showViews>-1</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-450</xoffset>
-    <yoffset>-158</yoffset>
+    <page>1</page>
+    <xoffset>-155</xoffset>
+    <yoffset>-55</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgSoccerField" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,10 +57,33 @@ createPlayaz()</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="ctrlShootTo" x="896" y="576" name="goalLabel" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="ctrlShootTo" x="864" y="864" name="goalLabel" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="objGoal" x="960" y="384" name="goal" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ctrlPases" x="-96" y="-128" name="passes" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ctrlTopLabel" x="32" y="-128" name="inst_BE0183C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGoal" x="512" y="384" name="inst_C68FDBEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGoal" x="64" y="384" name="inst_3296C48C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="864" y="384" name="inst_BEFDF038" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="768" y="512" name="inst_C6C87CF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="576" y="384" name="inst_43C4084C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="352" y="384" name="inst_41DE9899" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="768" y="256" name="inst_40C6DB80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="576" y="224" name="inst_1AC9CED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="576" y="64" name="inst_641DF7E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="576" y="544" name="inst_C92FFA69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="576" y="704" name="inst_DDA00FB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="352" y="576" name="inst_2EA608F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPassivePlaya" x="352" y="192" name="inst_C3C94D31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="160" y="384" name="inst_411DE062" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="256" y="256" name="inst_B4A44538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="448" y="384" name="inst_8DD0797B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="672" y="384" name="inst_86D83744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="256" y="512" name="inst_12D05415" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="448" y="224" name="inst_8BC776B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="448" y="64" name="inst_A37A34A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="448" y="544" name="inst_18ECAB0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="448" y="704" name="inst_C582904B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="672" y="192" name="inst_2EC65A5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaya" x="672" y="576" name="inst_2C3DFFB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

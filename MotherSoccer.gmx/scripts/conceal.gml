@@ -7,6 +7,7 @@ setSprites()
 
 drawShootCoordinates()
 drawGoalkeepCoordinates()
+
 drawMatchResult()
 
 if (global.result == RESULT_GAME_IN_PROGRESS)
