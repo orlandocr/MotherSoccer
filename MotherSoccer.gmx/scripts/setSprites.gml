@@ -2,11 +2,19 @@
 var j = instance_find(objPlaya, 1-1);
 if (!global.isAttack)
 {
-    j.sprite_index = sprGoalieLeft
+    j.sprite_index = sprGoalieSelectedLeft
 }
 else if (isSelected(IS_GOALIE))
 {
     j.sprite_index = sprGoalieSelected
+    if (isLeftToRight())
+    {
+        j.sprite_index = sprGoalieSelected;
+    }
+    else
+    {
+        j.sprite_index = sprGoalieSelectedLeft;
+    } 
 }
 else
 {
@@ -36,7 +44,14 @@ if (global.isAttack)
             var j = getSelected(i);
             if (j != noone)
             {
-                j.sprite_index = sprPlayaSelected;
+                if (isLeftToRight())
+                {
+                    j.sprite_index = sprPlayaSelected;
+                }
+                else
+                {
+                    j.sprite_index = sprPlayaSelectedLeft;
+                }                
             }
         }
     };
@@ -54,17 +69,22 @@ else
         if (isDead(i))
         {
             var j = getDead(i);
+            
+            
             if (j != noone)
             {
                 j.sprite_index = sprPlayaSelectedLeft;
-                draw_set_color(c_red);
+                //draw_set_color(c_red);
                 
                 var killedByNumba = global.killedBy[j.type];
                 //debug("setSprites " + s(j.numba) + "-" + s(killedByNumba))
                 var killedBy = instance_find(objPassivePlaya, killedByNumba-11-1);
                 killedBy.sprite_index = sprPassivePlayaDead;
                 //debug("setSprites " + s(j.numba) + "-" + s(killedByNumba))
-                draw_line_width(j.x, j.y, killedBy.x, killedBy.y, 10)
+                if (!global.modeCheckResults)
+                {
+                    draw_line_width(j.x, j.y, killedBy.x, killedBy.y, 10)
+                }
             }
         }
     };

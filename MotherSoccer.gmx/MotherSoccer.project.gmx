@@ -45,7 +45,7 @@
       <sprite>sprites\sprPassiveGoalie</sprite>
       <sprite>sprites\sprPassivePlaya</sprite>
       <sprite>sprites\sprPassivePlayaDead</sprite>
-      <sprite>sprites\sprGoalieLeft</sprite>
+      <sprite>sprites\sprGoalieSelectedLeft</sprite>
       <sprite>sprites\sprPlayaSelectedLeft</sprite>
       <sprite>sprites\sprPassiveGoalieSelected</sprite>
     </sprites>
@@ -62,6 +62,8 @@
       <script>scripts\createPlaya.gml</script>
       <script>scripts\createPassivePlaya.gml</script>
       <script>scripts\selectFormation.gml</script>
+      <script>scripts\getPlayaTypeX.gml</script>
+      <script>scripts\isLeftToRight.gml</script>
       <script>scripts\getPlayaTypeXL2R.gml</script>
       <script>scripts\getPlayaTypeXR2L.gml</script>
       <script>scripts\getPlayaY.gml</script>

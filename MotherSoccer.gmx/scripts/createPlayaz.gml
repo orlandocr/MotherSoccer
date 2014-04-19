@@ -9,7 +9,7 @@ for (playaType=IS_GOALIE; playaType<=IS_STRIKER; playaType++)
     for (currentOfPlayaType=1; currentOfPlayaType<=howManyOfPlayaType; currentOfPlayaType++)
     {
         numba++;
-        var xxx = getPlayaTypeXL2R(playaType);
+        var xxx = getPlayaTypeX(playaType);
         if (!global.isAttack)
         {
             xxx = room_width - xxx + 16

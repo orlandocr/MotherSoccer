@@ -1,8 +1,10 @@
-switch (argument0)
+//getPlayaTypeX(playaType)
+
+if (isLeftToRight())
 {
-    case IS_GOALIE: return 96;
-    case IS_DEFENDER: return 256;
-    case IS_MIDFIELDER: return 480;
-    case IS_STRIKER: return 736;
-    default: return INVALID;
+    return getPlayaTypeXL2R(argument0)
+}
+else
+{
+    return getPlayaTypeXR2L(argument0)
 }
