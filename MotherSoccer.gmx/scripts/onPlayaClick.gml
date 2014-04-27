@@ -22,8 +22,6 @@ else
     {
         playSound(sfxSelectPorteroDelete)
         show_message("mae no weon, uno no puede matar al portero!")
-        //playSound(sfxSelectPorteroDelete)
-        //show_message("mae no weon, el portero no sabe barrerse...")
     }
     else
     {

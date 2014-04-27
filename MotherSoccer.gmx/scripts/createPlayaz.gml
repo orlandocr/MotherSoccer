@@ -15,7 +15,14 @@ for (playaType=IS_GOALIE; playaType<=IS_STRIKER; playaType++)
             xxx = room_width - xxx + 16
         }
         var yyy = getPlayaY(howManyOfPlayaType,currentOfPlayaType);
-        createPlaya(numba, playaType, xxx, yyy)
+        if (global.isPlayer1 && !global.isAttack)
+        {
+            createPassivePlaya(numba, playaType, xxx, yyy)
+        }
+        else
+        {
+            createPlaya(numba, playaType, xxx, yyy)
+        }
     };
 };
 
@@ -34,7 +41,15 @@ for (playaType=IS_GOALIE; playaType<=IS_STRIKER; playaType++)
             xxx = room_width - xxx + 16
         }
         var yyy = getPlayaY(howManyOfPlayaType,currentOfPlayaType);
-        createPassivePlaya(numba, playaType, xxx, yyy)
+
+        if (global.isPlayer1)
+        {
+            createPlaya(numba, playaType, xxx, yyy)
+        }
+        else
+        {
+            createPassivePlaya(numba, playaType, xxx, yyy)
+        }
     };
 };
 

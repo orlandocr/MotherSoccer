@@ -5,14 +5,7 @@ if (global.modeCheckResults)
 }
 else
 {
-    if (room==roomShoot)
-    {
-        msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendVerb();
-    }
-    else
-    {
-        msg = "Player " + string(getCurrentPlayer()) + ": " + getAttackOrDefendMessage();
-    }
+    msg = "P" + string(getCurrentPlayer()) + ": " + getAttackOrDefend() + "!";
 }
 
 draw_set_font(font28)

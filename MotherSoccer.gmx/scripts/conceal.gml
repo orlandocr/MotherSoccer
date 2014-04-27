@@ -13,9 +13,7 @@ drawMatchResult()
 if (global.result == RESULT_GAME_IN_PROGRESS)
 {
     calculateResult();
-    
-    //volver juego
-    //global.isPlayer1 = !global.isPlayer1
+    //mofoReport()
 }
 else
 {

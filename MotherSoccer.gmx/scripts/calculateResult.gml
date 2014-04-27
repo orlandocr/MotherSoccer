@@ -2,19 +2,27 @@ var isNoStrike = false;
 var isGoalKept = false;
 var isGoal = false;
 
+
+var omfg = global.isPlayer1 && !global.isAttack;
+if (omfg)
+{
+    //d <-> k
+    //switch d,k
+    for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
+    {
+        var tmp = global.killedBy[IS_DEFENDER]
+        global.killedBy[IS_DEFENDER] = global.deadPlayaz[IS_STRIKER]
+        global.deadPlayaz[IS_STRIKER] = tmp
+    }
+}
+
 //FUCKING HACK OMG I'M A BITCH
+//k[1] <-> k[3]
 {
     var tmp = global.killedBy[IS_DEFENDER]
     global.killedBy[IS_DEFENDER] = global.killedBy[IS_STRIKER]
     global.killedBy[IS_STRIKER] = tmp
 }
-
-debug("calculateResult REPORT")
-debug("S: " + s(global.selectedPlayaz[IS_GOALIE]) + " " + s(global.selectedPlayaz[IS_DEFENDER]) + " " + s(global.selectedPlayaz[IS_MIDFIELDER]) + " " + s(global.selectedPlayaz[IS_STRIKER]))
-debug("D: " + s(global.deadPlayaz[IS_GOALIE]) + " " + s(global.deadPlayaz[IS_DEFENDER]) + " " + s(global.deadPlayaz[IS_MIDFIELDER]) + " " + s(global.deadPlayaz[IS_STRIKER]))
-debug("K: " + s(global.killedBy[IS_GOALIE]) + " " + s(global.killedBy[IS_DEFENDER]) + " " + s(global.killedBy[IS_MIDFIELDER]) + " " + s(global.killedBy[IS_STRIKER]))
-debug("K: " + s(global.killedBy[IS_GOALIE]-11) + " " + s(global.killedBy[IS_DEFENDER]-11) + " " + s(global.killedBy[IS_MIDFIELDER]-11) + " " + s(global.killedBy[IS_STRIKER]-11))
-
 
 for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
 {

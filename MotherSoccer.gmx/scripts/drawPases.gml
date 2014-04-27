@@ -12,9 +12,10 @@ if (global.isAttack)
 }
 else
 {
+    //ARE ALL DEAD PLAYAZ SELECTED?
     for (i=IS_DEFENDER; i<=IS_STRIKER; i++)
     {
-        if (global.deadPlayaz[i] == INVALID)
+        if (global.deadPlayaz[i] == INVALID) || (global.killedBy[i] == INVALID)
         {
             return false;
         }

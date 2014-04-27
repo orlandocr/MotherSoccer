@@ -24,17 +24,6 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprGoal</sprite>
-    <sprites name="ico">
-      <sprite>sprites\icoLines</sprite>
-      <sprite>sprites\icoLabel</sprite>
-    </sprites>
-    <sprites name="goal-button">
-      <sprite>sprites\sprGoalButton</sprite>
-      <sprite>sprites\sprGoalButtonShoot</sprite>
-      <sprite>sprites\sprGoalButtonDefend</sprite>
-    </sprites>
-    <sprite>sprites\sprPixel</sprite>
     <sprites name="round1">
       <sprite>sprites\sprPlaya</sprite>
       <sprite>sprites\sprPlayaSelected</sprite>
@@ -48,6 +37,18 @@
       <sprite>sprites\sprGoalieSelectedLeft</sprite>
       <sprite>sprites\sprPlayaSelectedLeft</sprite>
       <sprite>sprites\sprPassiveGoalieSelected</sprite>
+      <sprite>sprites\sprPassiveGoalieSelectedLeft</sprite>
+    </sprites>
+    <sprites name="goal-button">
+      <sprite>sprites\sprGoalButton</sprite>
+      <sprite>sprites\sprGoalButtonShoot</sprite>
+      <sprite>sprites\sprGoalButtonDefend</sprite>
+    </sprites>
+    <sprite>sprites\sprGoal</sprite>
+    <sprite>sprites\sprPixel</sprite>
+    <sprites name="ico">
+      <sprite>sprites\icoLines</sprite>
+      <sprite>sprites\icoLabel</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -64,6 +65,7 @@
       <script>scripts\selectFormation.gml</script>
       <script>scripts\getPlayaTypeX.gml</script>
       <script>scripts\isLeftToRight.gml</script>
+      <script>scripts\isRightToLeft.gml</script>
       <script>scripts\getPlayaTypeXL2R.gml</script>
       <script>scripts\getPlayaTypeXR2L.gml</script>
       <script>scripts\getPlayaY.gml</script>
@@ -76,14 +78,18 @@
       <scripts name="player-selection">
         <script>scripts\isSelected.gml</script>
         <script>scripts\isDead.gml</script>
+        <script>scripts\isKilledBy.gml</script>
         <script>scripts\getSelected.gml</script>
         <script>scripts\getDead.gml</script>
+        <script>scripts\getKilledBy.gml</script>
         <script>scripts\getPlayerInstance.gml</script>
         <script>scripts\getPassivePlayerInstance.gml</script>
       </scripts>
     </scripts>
     <scripts name="gameplay">
       <script>scripts\setSprites.gml</script>
+      <script>scripts\setSpritesDefensePlayer2.gml</script>
+      <script>scripts\setSpritesDefensePlayer1.gml</script>
       <script>scripts\findCloserInstance.gml</script>
       <script>scripts\killNearest.gml</script>
       <script>scripts\onButtonPress.gml</script>
@@ -99,11 +105,11 @@
         <script>scripts\playSound.gml</script>
         <script>scripts\playResultSfx.gml</script>
       </scripts>
+      <script>scripts\mofoReport.gml</script>
     </scripts>
     <scripts name="hud">
       <script>scripts\drawTopLabel.gml</script>
-      <script>scripts\getAttackOrDefendMessage.gml</script>
-      <script>scripts\getAttackOrDefendVerb.gml</script>
+      <script>scripts\getAttackOrDefend.gml</script>
       <script>scripts\drawShootCoordinates.gml</script>
       <script>scripts\drawGoalkeepCoordinates.gml</script>
       <script>scripts\drawSwitch.gml</script>
